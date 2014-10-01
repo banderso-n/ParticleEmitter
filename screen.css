@@ -1,0 +1,43 @@
+body {
+    text-align: center;
+}
+
+.picture {
+    display: inline-block;
+    height: 491px;
+    position: relative;
+    width: 576px;
+}
+
+.picture-frame {
+    background: url(picture-frame.png);
+    background-size: cover;
+    height: 100%;
+    left: 0;
+    pointer-events: none;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+.picture-mat {
+    box-sizing: border-box;
+    height: 100%;
+    padding: 125px;
+    width: 100%;
+}
+
+.picture-content {
+    height: 100%;
+    position: relative;
+    width: 100%;
+}
+
+.picture-label {
+    left: 0;
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+}

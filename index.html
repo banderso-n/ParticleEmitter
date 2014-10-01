@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Particle Emitter</title>
+    <link rel="stylesheet" href="screen.css" />
+</head>
+<body>
+
+    <div class="picture">
+        <div class="picture-mat">
+            <div class="picture-label">mouse around this here</div>
+            <canvas id="js-scene" class="picture-content"></canvas>
+        </div>
+        <div class="picture-frame"></div>
+    </div>
+
+    <script src="Scene.js"></script>
+    <script src="CanvasObject.js"></script>
+    <script src="ParticleEmitter.js"></script>
+    <script src="App.js"></script>
+    <script>
+    (function () {
+        'use strict';
+
+        var App = NRD['App'];
+
+        window.app = new App();
+
+    }());
+    </script>
+</body>
+</html>
