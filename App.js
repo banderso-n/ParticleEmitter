@@ -51,7 +51,7 @@
     App.prototype._onMouseMove = function (e) {
         var throttleFactor = e.offsetY / this.canvas.height;
         this.rainEmitter.particleSpeed = this.particleSpeedPrevious * throttleFactor * 1.5;
-        this.rainEmitter.particlesPerFrame = Math.round(this.particlesPerFramePrevious * throttleFactor);
+        this.rainEmitter.particlesPerFrame = Math.ceil(this.particlesPerFramePrevious * throttleFactor);
         this.rainEmitter.x = e.offsetX;
     };
 
